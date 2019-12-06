@@ -1,0 +1,42 @@
+19:52:04.970 INFO [main] org.lenskit.cli.Main: Starting LensKit 3.0-M1 on Java 1.8.0_212 from Oracle Corporation
+19:52:04.994 DEBUG [main] org.lenskit.LenskitInfo: have 5573 active revisions
+19:52:04.997 DEBUG [main] org.lenskit.cli.Main: Built from Git revision c0210fa3281ef8b15b0959bcd5fced43c5fec38a
+19:52:04.997 DEBUG [main] org.lenskit.cli.Main: Using VM 'OpenJDK 64-Bit Server VM' version 25.212-b04 from Oracle Corporation
+19:52:04.998 INFO [main] org.lenskit.cli.Main: Have 8 processors and heap limit of 3541 MiB
+19:52:05.007 INFO [main] org.lenskit.cli.util.RecommenderLoader: creating fresh recommender
+19:52:05.199 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/etc/user-user.groovy
+19:52:05.534 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source ratings with base URI file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/data/movielens.yml
+19:52:05.534 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/data/ratings.csv
+19:52:05.540 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source ratings to read from file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/data/ratings.csv
+19:52:05.544 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: using delimiter ,
+19:52:05.544 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: reading header
+19:52:05.544 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: reading entities of type EntityType[rating]
+19:52:05.575 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.ratings.RatingBuilder: using entity builder {}
+19:52:05.575 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source movies with base URI file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/data/movielens.yml
+19:52:05.575 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/data/movies.csv
+19:52:05.575 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source movies to read from file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/data/movies.csv
+19:52:05.575 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: using delimiter ,
+19:52:05.575 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: reading header
+19:52:05.575 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: reading entities of type EntityType[item]
+19:52:05.575 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.entities.BasicEntityBuilder: using entity builder {}
+19:52:05.575 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source tags with base URI file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/data/movielens.yml
+19:52:05.576 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/data/tags.csv
+19:52:05.576 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source tags to read from file:/home/nisreen/Documents/courses/coursera/recommender/Nearest_Neighbor_Collaborative%20Filtering-20191123T170937Z-001/Nearest_Neighbor_Collaborative%20Filtering/projects/uu-assignment/data/tags.csv
+19:52:05.576 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: using delimiter ,
+19:52:05.576 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: reading header
+19:52:05.576 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: reading entities of type EntityType[item-tag]
+19:52:05.576 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.entities.BasicEntityBuilder: using entity builder {}
+19:52:05.580 DEBUG [main] org.lenskit.LenskitRecommenderEngineBuilder: building graph from 3 configurations
+19:52:05.631 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: replacing nodes in graph with 12 nodes
+19:52:05.664 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: found 3 shared nodes
+19:52:05.664 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: final graph has 12 nodes
+19:52:05.665 INFO [main] org.lenskit.cli.util.RecommenderLoader: built recommender in 84.93 ms
+19:52:06.360 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+19:52:06.704 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+19:52:06.741 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 2500 entities with type EntityType[item] and 2 indexes
+19:52:06.763 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 264505 entities with type EntityType[rating] and 2 indexes
+19:52:06.772 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 94875 entities with type EntityType[item-tag] and 2 indexes
+19:52:06.772 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 862 entities with type EntityType[user] and 2 indexes
+19:52:06.777 INFO [main] org.lenskit.cli.commands.Predict: predicting 4 items
+19:52:07.371 INFO [main] org.lenskit.cli.commands.Predict: predicted for 4 items in 593.1 ms
+19:52:07.371 INFO [main] org.lenskit.cli.Main: If you use LensKit in published research, please see http://lenskit.org/research/
